@@ -1,0 +1,390 @@
+:root {
+  color-scheme: light;
+  --ink: #17211f;
+  --muted: #5b6763;
+  --line: #d9dfdc;
+  --paper: #fbfaf6;
+  --band: #eef1ed;
+  --accent: #0d6f67;
+  --accent-dark: #084d48;
+  --rust: #a55435;
+  --white: #ffffff;
+  --shadow: 0 18px 50px rgba(23, 33, 31, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px clamp(18px, 4vw, 56px);
+  background: rgba(251, 250, 246, 0.92);
+  border-bottom: 1px solid rgba(217, 223, 220, 0.75);
+  backdrop-filter: blur(14px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-weight: 760;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 6px;
+  font-size: 0.78rem;
+  letter-spacing: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2vw, 28px);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--accent-dark);
+}
+
+.hero {
+  min-height: 94vh;
+  background:
+    linear-gradient(90deg, rgba(12, 24, 22, 0.78) 0%, rgba(12, 24, 22, 0.58) 38%, rgba(12, 24, 22, 0.12) 72%),
+    url("assets/hero-workshop.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: stretch;
+}
+
+.hero-overlay {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 110px clamp(18px, 4vw, 56px) 72px;
+}
+
+.hero-content {
+  width: min(720px, 100%);
+  color: var(--white);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--rust);
+  font-size: 0.82rem;
+  font-weight: 780;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #f0b18b;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+h1 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 9vw, 6.8rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4.4vw, 4.2rem);
+  max-width: 12ch;
+}
+
+h3 {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+}
+
+.hero-copy {
+  max-width: 650px;
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+}
+
+.hero-actions,
+.contact-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-actions {
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-weight: 740;
+  text-decoration: none;
+}
+
+.button.primary {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.button.primary:hover {
+  background: var(--accent-dark);
+}
+
+.button.secondary {
+  border-color: rgba(255, 255, 255, 0.54);
+  color: var(--white);
+}
+
+.button.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.section,
+.band {
+  padding: clamp(68px, 9vw, 122px) clamp(18px, 4vw, 56px);
+}
+
+.band {
+  background: var(--band);
+}
+
+.section-inner {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.two-column,
+.split,
+.contact-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  gap: clamp(28px, 6vw, 88px);
+  align-items: start;
+}
+
+.intro p,
+.split p,
+.contact p {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.6vw, 1.24rem);
+}
+
+.section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1fr);
+  gap: clamp(24px, 6vw, 80px);
+  align-items: end;
+  margin-bottom: 34px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.service-card {
+  min-height: 280px;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.service-card p,
+.book-item p,
+.format-list p {
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.book-list {
+  border-top: 1px solid var(--line);
+}
+
+.book-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.book-item a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 156px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: var(--accent-dark);
+  font-weight: 720;
+  text-decoration: none;
+}
+
+.book-item a:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.format-list {
+  display: grid;
+  gap: 22px;
+}
+
+.format-list > div {
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-inner {
+  align-items: center;
+}
+
+.contact .button {
+  justify-self: end;
+}
+
+.site-footer {
+  padding: 28px clamp(18px, 4vw, 56px);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    position: sticky;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  .hero {
+    min-height: 88vh;
+    background:
+      linear-gradient(90deg, rgba(12, 24, 22, 0.82) 0%, rgba(12, 24, 22, 0.68) 55%, rgba(12, 24, 22, 0.28) 100%),
+      url("assets/hero-workshop.jpg") center / cover no-repeat;
+  }
+
+  h1 {
+    max-width: 11ch;
+  }
+
+  .two-column,
+  .split,
+  .contact-inner,
+  .section-heading,
+  .book-item {
+    grid-template-columns: 1fr;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact .button {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand {
+    white-space: normal;
+  }
+
+  .hero-overlay {
+    padding-top: 48px;
+  }
+
+  h1 {
+    font-size: clamp(2.55rem, 18vw, 4.2rem);
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .button,
+  .book-item a {
+    width: 100%;
+  }
+}
