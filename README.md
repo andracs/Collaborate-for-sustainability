@@ -14,11 +14,6 @@ Første statiske udkast til en hjemmeside for András Ács Pedersens professione
 - https://www.amazon.com/Digital-sustainability-Andr%C3%A1s-%C3%81cs-Pedersen/dp/B0GTJXGZS9
 - https://leanpub.com/sustainable-digital
 
-## Skal udfyldes
+## Projekt-todo
 
-- korrekt virksomhedsnavn
-- domæne
-- e-mail og telefon
-- CV-/LinkedIn-tekst, når den er bekræftet
-- kundetyper, cases og eventuelle logoer
-- ønsket sprogvariant: dansk, engelsk eller begge
+Se [TODO.md](TODO.md). Den liste gælder kun denne hjemmeside.
