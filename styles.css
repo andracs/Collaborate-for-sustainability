@@ -246,6 +246,19 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.featured-talk {
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: stretch;
+  margin-bottom: 18px;
+  padding: clamp(22px, 3vw, 32px);
+  background: var(--ink);
+  color: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
 .profile-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -270,6 +283,16 @@ h3 {
   color: var(--muted);
 }
 
+.featured-talk p {
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.featured-talk .offer-meta {
+  margin: 0 0 14px;
+  color: #f0b18b;
+}
+
 .offer-card .offer-meta {
   margin: 0 0 14px;
   color: var(--rust);
@@ -277,6 +300,62 @@ h3 {
   font-weight: 780;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.featured-talk h3 {
+  max-width: 16ch;
+  font-size: clamp(1.7rem, 3.2vw, 3.1rem);
+}
+
+.talk-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.talk-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  border-radius: 6px;
+  color: var(--white);
+  font-weight: 720;
+  text-decoration: none;
+}
+
+.talk-actions a:first-child {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.talk-actions a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.talk-actions a:first-child:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+.slideshow-frame {
+  display: block;
+  min-height: 360px;
+  overflow: hidden;
+  background: #101817;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+}
+
+.slideshow-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: contain;
 }
 
 .profile-panel {
@@ -396,6 +475,7 @@ h3 {
   .split,
   .contact-inner,
   .section-heading,
+  .featured-talk,
   .book-item {
     grid-template-columns: 1fr;
   }
@@ -440,7 +520,13 @@ h3 {
   .button,
   .book-item > a,
   .book-actions,
-  .book-actions a {
+  .book-actions a,
+  .talk-actions a {
     width: 100%;
+  }
+
+  .slideshow-frame,
+  .slideshow-frame img {
+    min-height: 260px;
   }
 }
