@@ -1,12 +1,12 @@
 # Hjemmeside
 
-Første statiske udkast til en hjemmeside for András Ács Pedersens professionelle services:
+Første udkast til en hjemmeside for András Ács Pedersen:
 
 - kurser om bæredygtig IT
 - bæredygtighed og AI
 - sikker softwareudvikling
-- workshops for virksomheder
-- inspirerende foredrag
+- workshops 
+- foredrag
 
 ## Kilder brugt i første udkast
 
