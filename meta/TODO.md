@@ -3,7 +3,7 @@ Mail https://tuta.com/
 Formular https://my.liberaforms.org/
 WEBINAR AFHOLDES PÅ ZOOM 
 roadmap.sh
-
+Måske også en stack
 
 ## Næste forbedringer
 
