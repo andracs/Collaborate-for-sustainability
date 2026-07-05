@@ -1,18 +1,18 @@
 # Hjemmeside TODO
-Mail https://tuta.com/ 
-Formular https://my.liberaforms.org/
-WEBINAR AFHOLDES PÅ ZOOM 
-roadmap.sh
-Måske også en stack
+- Mail https://tuta.com/ 
+- Formular https://my.liberaforms.org/
+- WEBINAR AFHOLDES PÅ ZOOM 
+- roadmap.sh
+- Måske også en stack
 
-Book en samtale - fast ugedag fredag
-Book foredraget -
-Deltag i webinar - 
-Kontakt mig om et forløb - 
+- Book en samtale - fast ugedag fredag
+- Book foredraget -
+- Deltag i webinar - 
+- Kontakt mig om et forløb -
+- Bestil en bog
+- Bestil undervisningsmateriale
 
-Bestil en bog
-Bestil undervisningsmateriale
-Migrer it-sikkerhedsbogen
+- Migrer it-sikkerhedsbogen
 
 
 ## Næste forbedringer
