@@ -1,12 +1,7 @@
 # Hjemmeside
 
-Første statiske udkast til en hjemmeside for András Ács Pedersens professionelle services:
-
-- kurser om bæredygtig IT
-- bæredygtighed og AI
-- sikker softwareudvikling
-- workshops for virksomheder
-- inspirerende foredrag
+Første udkast til en hjemmeside for András Ács Pedersen:
+https://andracs.github.io/Collaborate-for-sustainability 
 
 ## Kilder brugt i første udkast
 

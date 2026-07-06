@@ -1,9 +1,8 @@
-# Hjemmeside TODO
-
-Denne liste gælder kun consulting-hjemmesiden på `andracs.github.io/consulting/`.
-Almindelige personlige todos hører ikke hjemme her.
 
 ## Næste forbedringer
+- Migrer it-sikkerhedsbogen
+
+- Roadmap https://roadmap.sh/r/6a4bb759b3c5c894520c63a7/edit
 
 - [ ] Bedre billede
   - Find eller tag et stærkere primært billede, helst et rigtigt foto af András i undervisnings-, foredrags- eller workshop-situation.
