@@ -1,21 +1,8 @@
-# Hjemmeside TODO
-- Mail https://tuta.com/ 
-- Formular https://my.liberaforms.org/
-- WEBINAR AFHOLDES PÅ ZOOM 
-- roadmap.sh
-- Måske også en stack
-
-- Book en samtale - fast ugedag fredag
-- Book foredraget -
-- Deltag i webinar - 
-- Kontakt mig om et forløb -
-- Bestil en bog
-- Bestil undervisningsmateriale
-
-- Migrer it-sikkerhedsbogen
-
 
 ## Næste forbedringer
+- Migrer it-sikkerhedsbogen
+
+- Roadmap https://roadmap.sh/r/6a4bb759b3c5c894520c63a7/edit
 
 - [ ] Bedre billede
   - Find eller tag et stærkere primært billede, helst et rigtigt foto af András i undervisnings-, foredrags- eller workshop-situation.
